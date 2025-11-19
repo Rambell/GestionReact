@@ -26,7 +26,7 @@ export default function MainLayout({ children }) {
       {/* NAVBAR */}
       <AppBar position="fixed" sx={{ zIndex: 1300 }}>
         <Toolbar>
-          <IconButton color="inherit" onClick={() => setOpen(true)}>
+          <IconButton color="inherit" onClick={() => setOpen(!open)}>
             <MenuIcon />
           </IconButton>
           <Typography sx={{ flexGrow: 1, ml: 2 }}>Mi Dashboard</Typography>
